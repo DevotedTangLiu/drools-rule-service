@@ -1,0 +1,33 @@
+project.business.type=1001,1002
+
+[1001]
+# 原加载jar包方式使用url从workbench拉取,后优化为本地配置maven仓库地址,通过groupId/artifactId/version拉取依赖包
+# url=http://192.168.9.16:8080/business-central/maven2/com/myspace/PreLoanStrategyNew/1.0.0-SNAPSHOT/PreLoanStrategyNew-1.0.0-20201117.200929-91.jar
+groupId=com.myspace
+artifactId=PreLoanStrategyNew
+version=1.0.0-SNAPSHOT
+rule.size=1
+
+1.id=PreLoanStrategyDD
+1.name=DD_
+1.name.type=PRE
+1.type=normal
+1.insertResult=true
+1.request=com.myspace.INPUTDATA
+1.response=com.myspace.OUTPUTDATA
+
+[1002]
+# 原加载jar包方式使用url从workbench拉取,后优化为本地配置maven仓库地址,通过groupId/artifactId/version拉取依赖包
+# url=http://192.168.9.16:8080/business-central/maven2/com/myspace/QILUPreLoanStrategy/1.0.0-SNAPSHOT/QILUPreLoanStrategy-1.0.0-20210113.183252-1.jar
+groupId=com.myspace
+artifactId=QILUPreLoanStrategy
+version=1.0.0-SNAPSHOT
+rule.size=1
+
+1.id=PreLoanStrategyDD
+1.name=DD_
+1.name.type=PRE
+1.type=normal
+1.insertResult=true
+1.request=com.myspace.INPUTDATA
+1.response=com.myspace.OUTPUTDATA
